@@ -24,14 +24,17 @@ public class JPTV21Task4AndreiPavlov {
         int count = 0;
         int[] ar = new int[100];
         for(int i = 0; i <ar.length; i++){
+            while(true){
             Arrays.sort(ar);
             int randn = random.nextInt(100) +1;
             if (randn%2 != 0){
             ar[i] = randn;
             numsum = ar[i] + numsum;
             mid = numsum/ar.length;
+            break;
             }
-                
+
+        }
             
         }
                 for(int i = 0; i <ar.length; i++){
