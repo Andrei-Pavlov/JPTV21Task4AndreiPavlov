@@ -25,22 +25,26 @@ public class JPTV21Task4AndreiPavlov {
         int[] ar = new int[100];
         for(int i = 0; i <ar.length; i++){
             while(true){
-            Arrays.sort(ar);
+            
             int randn = random.nextInt(100) +1;
             if (randn%2 != 0){
+            
             ar[i] = randn;
             numsum = ar[i] + numsum;
             mid = numsum/ar.length;
             break;
+
             }
 
         }
             
         }
                 for(int i = 0; i <ar.length; i++){
+                    Arrays.sort(ar);
             System.out.printf("%3d",ar[i]);
             if (i == 9 || i == 19 || i == 29 || i == 39 || i == 49 || i == 59 || i == 69 || i == 79 || i == 89){
                 System.out.println("");
+                
             }
                 
     }
